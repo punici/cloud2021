@@ -1,13 +1,13 @@
-package com.punici.springcloud2021;
+package com.punici.cloud.payment;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class Springcloud2021Application {
+public class CloudProviderPayment8001Application {
 
     public static void main(String[] args) {
-        SpringApplication.run(Springcloud2021Application.class, args);
+        SpringApplication.run(CloudProviderPayment8001Application.class, args);
     }
 
 }

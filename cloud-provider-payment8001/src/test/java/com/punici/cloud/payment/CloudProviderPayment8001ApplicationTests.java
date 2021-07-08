@@ -1,13 +1,15 @@
-package com.punici.springcloud2021;
+package com.punici.cloud.payment;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class Springcloud2021ApplicationTests {
-
+class CloudProviderPayment8001ApplicationTests
+{
+    
     @Test
-    void contextLoads() {
+    void contextLoads()
+    {
     }
-
+    
 }
