@@ -8,6 +8,7 @@
     <version>0.0.1-SNAPSHOT</version>
     <modules>
         <module>consumer-order80</module>
+        <module>provider-payment8001</module>
     </modules>
     <name>cloud2021</name>
     <description>Demo project for Spring Boot</description>
