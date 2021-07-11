@@ -1,4 +1,4 @@
-package com.punici.cloud.payment.enty;
+package com.punici.cloud.payment.utils;
 
 public abstract class AbstractBusinessException extends RuntimeException
 {

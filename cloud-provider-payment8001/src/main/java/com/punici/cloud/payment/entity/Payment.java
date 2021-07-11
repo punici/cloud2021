@@ -1,4 +1,4 @@
-package com.punici.cloud.payment.enty;
+package com.punici.cloud.payment.entity;
 
 import lombok.Data;
 
@@ -6,4 +6,6 @@ import lombok.Data;
 public class Payment
 {
     private Long id;
+    
+    private String serial;
 }

@@ -1,4 +1,4 @@
-package com.punici.cloud.payment.enty;
+package com.punici.cloud.payment.utils;
 
 public enum ResponseCode
 {
@@ -87,7 +87,6 @@ public enum ResponseCode
     {
         ResponseCode s = FAIL;
         ResponseCode[] var2 = values();
-        int var3 = var2.length;
         
         for(ResponseCode e : var2)
         {
