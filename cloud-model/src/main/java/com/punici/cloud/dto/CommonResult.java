@@ -1,8 +1,8 @@
-package com.punici.cloud.payment.utils;
+package com.punici.cloud.dto;
 
 import java.io.Serializable;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.punici.cloud.exception.AbstractBusinessException;
 
 import lombok.Data;
 
@@ -15,7 +15,6 @@ public class CommonResult<T> implements Serializable
     
     private String desc;
     
-    @JsonIgnore
     private String requestUri;
     
     protected T result;

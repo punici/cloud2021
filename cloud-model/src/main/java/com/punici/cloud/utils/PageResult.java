@@ -1,4 +1,4 @@
-package com.punici.cloud.payment.utils;
+package com.punici.cloud.utils;
 
 import java.io.Serializable;
 import java.util.List;

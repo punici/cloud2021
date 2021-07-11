@@ -1,4 +1,6 @@
-package com.punici.cloud.payment.utils;
+package com.punici.cloud.exception;
+
+import com.punici.cloud.dto.ResponseCode;
 
 public abstract class AbstractBusinessException extends RuntimeException
 {

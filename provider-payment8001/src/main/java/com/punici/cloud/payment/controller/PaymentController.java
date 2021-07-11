@@ -3,9 +3,9 @@ package com.punici.cloud.payment.controller;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import com.punici.cloud.dto.CommonResult;
 import com.punici.cloud.payment.entity.Payment;
 import com.punici.cloud.payment.service.PaymentService;
-import com.punici.cloud.payment.utils.CommonResult;
 
 @RestController
 @RequestMapping

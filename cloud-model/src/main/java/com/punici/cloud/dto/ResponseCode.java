@@ -1,4 +1,4 @@
-package com.punici.cloud.payment.utils;
+package com.punici.cloud.dto;
 
 public enum ResponseCode
 {
