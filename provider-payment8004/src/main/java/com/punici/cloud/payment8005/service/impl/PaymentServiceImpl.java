@@ -1,11 +1,10 @@
-package com.punici.cloud.payment.service.impl;
+package com.punici.cloud.payment8005.service.impl;
 
+import com.punici.cloud.payment8005.dao.PaymentDao;
+import com.punici.cloud.payment8005.entity.Payment;
+import com.punici.cloud.payment8005.service.PaymentService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
-import com.punici.cloud.payment.dao.PaymentDao;
-import com.punici.cloud.payment.entity.Payment;
-import com.punici.cloud.payment.service.PaymentService;
 
 @Service
 public class PaymentServiceImpl implements PaymentService

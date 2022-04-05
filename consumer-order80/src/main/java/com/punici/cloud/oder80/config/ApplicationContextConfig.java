@@ -1,4 +1,4 @@
-package com.punici.cloud.config;
+package com.punici.cloud.oder80.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
