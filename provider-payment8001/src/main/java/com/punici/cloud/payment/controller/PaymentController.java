@@ -4,20 +4,20 @@ import java.util.List;
 
 import javax.annotation.Resource;
 
+import com.punici.cloud.model.dto.CommonResult;
+import com.punici.cloud.model.entity.Payment;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.cloud.client.ServiceInstance;
 import org.springframework.cloud.client.discovery.DiscoveryClient;
 import org.springframework.web.bind.annotation.*;
 
-import com.punici.cloud.dto.CommonResult;
-import com.punici.cloud.payment.entity.Payment;
 import com.punici.cloud.payment.service.PaymentService;
 
 import lombok.extern.slf4j.Slf4j;
 
 @RestController
-@RequestMapping
+@RequestMapping("/payment")
 @Slf4j
 public class PaymentController
 {
@@ -37,10 +37,12 @@ public class PaymentController
         return new CommonResult<>();
     }
     
-    @GetMapping("/getPaymentById")
-    public CommonResult<Payment> getPaymentById(@RequestParam("id") Long id)
+    @GetMapping("/get/{id}")
+    public CommonResult<Payment> getPaymentById(@PathVariable("id") Long id)
     {
-        return new CommonResult<>(paymentService.getPaymentById(id));
+        CommonResult<Payment> result = new CommonResult<>(paymentService.getPaymentById(id));
+        result.setCode(Integer.parseInt(serverPort));
+        return result;
     }
     
     @GetMapping("/payment/discovery")

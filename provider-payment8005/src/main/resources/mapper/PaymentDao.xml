@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
-<mapper namespace="com.punici.cloud.payment8005.dao.PaymentDao">
+<mapper namespace="PaymentDao">
 
-    <resultMap id="BaseResultMap" type="com.punici.cloud.payment8005.entity.Payment">
+    <resultMap id="BaseResultMap" type="Payment">
         <id column="id" property="id" jdbcType="BIGINT" javaType="long"/>
         <result column="serial" property="serial" jdbcType="VARCHAR" javaType="string"/>
 
     </resultMap>
 
-    <insert id="create" parameterType="com.punici.cloud.payment8005.entity.Payment" useGeneratedKeys="true" keyColumn="id">
+    <insert id="create" parameterType="Payment" useGeneratedKeys="true" keyColumn="id">
         INSERT INTO payment (serial)
         VALUES (#{serial});
     </insert>

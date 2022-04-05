@@ -8,8 +8,10 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 @EnableDiscoveryClient
 public class ProviderPayment8002Application
 {
+    
     public static void main(String[] args)
     {
         SpringApplication.run(ProviderPayment8002Application.class, args);
     }
+    
 }

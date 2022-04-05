@@ -1,7 +1,8 @@
 package com.punici.cloud.payment.service;
 
-import com.punici.cloud.payment.entity.Payment;
 import org.apache.ibatis.annotations.Param;
+
+import com.punici.cloud.model.entity.Payment;
 
 public interface PaymentService
 {
