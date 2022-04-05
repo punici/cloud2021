@@ -1,9 +1,9 @@
 server:
-  port: 80
+  port: 8001
 
 spring:
   application:
-    name: order-service
+    name: hystrix-payment-service
   datasource:
     # 当前数据源操作类型
     type: com.alibaba.druid.pool.DruidDataSource
@@ -22,11 +22,18 @@ eureka:
       # 集群版
       #defaultZone: http://eureka7001.com:7001/eureka,http://eureka7002.com:7002/eureka
   instance:
-    instance-id: order80-service
+    instance-id: payment8001
     # 访问路径可以显示ip地址
     prefer-ip-address: true
-  
+    # Eureka客户端向服务端发送心跳的间隔时间，单位时间为秒，默认是30秒
+    lease-renewal-interval-in-seconds: 30
+    #Eureka服务端在收到最后一次心跳后等待时间上限，单位时间为秒，默认是90秒，超过将剔除服务
+    lease-expiration-duration-in-seconds: 90
+
 
 mybatis:
   mapper-locations: classpath*:mapper/*.xml
-  type-aliases-package: com.punici.cloud.oder80.entity
+  type-aliases-package: com.punic.cloud.model.entity
+
+swagger:
+  enabled: true

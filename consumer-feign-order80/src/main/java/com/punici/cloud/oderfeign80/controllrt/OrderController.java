@@ -12,7 +12,7 @@ import com.punici.cloud.model.entity.Payment;
 import com.punici.cloud.oderfeign80.feign.PaymentFeignAPI;
 
 @RestController
-@RequestMapping("/order/consumer")
+@RequestMapping("/order")
 public class OrderController
 {
     @Resource
@@ -23,4 +23,17 @@ public class OrderController
     {
         return paymentFeignAPI.getPaymentById(id);
     }
+    
+    @GetMapping("/ok/{id}")
+    public String paymentInfoOK(@PathVariable("id") Integer id)
+    {
+        return paymentFeignAPI.paymentInfoOK(id);
+    }
+    
+    @GetMapping("/timeout/{id}")
+    public String paymentTimeout(@PathVariable("id") Integer id)
+    {
+        return paymentFeignAPI.paymentTimeout(id);
+    }
+    
 }

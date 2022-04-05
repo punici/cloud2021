@@ -18,6 +18,7 @@
         <module>provider-payment8004</module>
         <module>provider-payment8005</module>
         <module>consumer-feign-order80</module>
+        <module>provider-hystrix-payment8001</module>
     </modules>
     <name>cloud2021</name>
     <description>Demo project for Spring Boot</description>

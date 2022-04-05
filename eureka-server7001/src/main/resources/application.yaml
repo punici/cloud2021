@@ -14,8 +14,8 @@ eureka:
       # 集群eureka7002 相互注册##defaultZone: http://eureka7001.com:7001/eureka/
       # 集群eureka7001 相互注册##defaultZone: http://eureka7002.com:7001/eureka/
       # 单机
-      #defaultZone: "http://${eureka.instance.hostname}:${server.port}/eureka/"
-      defaultZone: http://eureka7002.com:7002/eureka/
+      defaultZone: "http://${eureka.instance.hostname}:${server.port}/eureka/"
+      #defaultZone: http://eureka7002.com:7002/eureka/
   server:
     enable-self-preservation: false   #关闭自我保护机制
     eviction-interval-timer-in-ms: 2000   #间隔时间变成2s
