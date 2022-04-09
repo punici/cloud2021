@@ -3,7 +3,7 @@ server:
 
 spring:
   application:
-    name: payment-service
+    name: hystrix-payment-service
   datasource:
     # 当前数据源操作类型
     type: com.alibaba.druid.pool.DruidDataSource
